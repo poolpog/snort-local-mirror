@@ -1,0 +1,4 @@
+rule_url=http://snort-local-mirror.example.com/|snortrules-snapshot.tar.gz|<oinkcode>
+rule_url=http://snort-local-mirror.example.com/|community-rules.tar.gz|Community
+rule_url=http://snort-local-mirror.example.com/ip-filter.blf|IPBLACKLIST|open
+rule_url=http://snort-local-mirror.example.com/|opensource.gz|<oinkcode>
