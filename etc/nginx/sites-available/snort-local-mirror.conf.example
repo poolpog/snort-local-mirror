@@ -1,0 +1,14 @@
+# This is an example vhost config for nginx; This won't work exactly as-is (e.g. example.com isn't real)
+# But the server_name and location/root match up with the rest of this git repo's scripts
+
+server {
+    listen 80;
+    server_name snort-local-mirror.example.com;
+    access_log /var/log/nginx/snort-mirror-access.log;
+    error_log  /var/log/nginx/snort-mirror-error.log warn;
+
+    location / {
+        root /usr/local/lib/snort/www;
+        index index.html;
+    }
+}
